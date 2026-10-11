@@ -1,0 +1,12 @@
+{
+  "version":"category-contact-v1",
+  "annotation":{"origin":"Team-authored synthetic judgments frozen before evaluation","independent_expert_review":false,"real_personal_data":false,"credentials":"Assumed synthetic assessment records, not actual measured human ability","rubric":"3 strong category/conditions; 2 eligible with weaker test; 1 eligible but missing stack; 0 wrong/unconfirmed category or incompatible explicit conditions","weights_tuned_on_dataset":false},
+  "cases":[
+    {"id":"backend-middle","split":"development","spec":"backend","grade":"Middle","skills":["python","sql"],"profiles":[["a",96,0,"Middle","backend",120000,["python","sql"],3],["b",75,3,"Middle","backend",120000,["python","sql"],2],["claims",null,0,null,"backend",120000,["python","sql"],0],["other",98,0,"Middle","frontend",120000,["python","sql"],0]]},
+    {"id":"frontend-junior","split":"development","spec":"frontend","grade":"Junior","skills":["typescript","react"],"profiles":[["a",90,0,"Junior","frontend",90000,["typescript","react"],3],["b",73,2,"Junior","frontend",90000,["typescript","react"],2],["other",99,0,"Middle","frontend",90000,["typescript","react"],0]]},
+    {"id":"qa-middle","split":"development","spec":"qa","grade":"Middle","skills":["testing","sql"],"profiles":[["a",90,0,"Middle","qa",120000,["testing","sql"],3],["b",73,0,"Middle","qa",120000,["testing","sql"],2],["expensive",99,0,"Middle","qa",200000,["testing","sql"],0]]},
+    {"id":"backend-senior","split":"holdout","spec":"backend","grade":"Senior","skills":["python","sql"],"profiles":[["a",92,0,"Senior","backend",120000,["python","sql"],3],["b",74,4,"Senior","backend",120000,["python","sql"],2],["other",99,0,"Junior","backend",120000,["python","sql"],0]]},
+    {"id":"frontend-middle","split":"holdout","spec":"frontend","grade":"Middle","skills":["typescript","react"],"profiles":[["a",90,0,"Middle","frontend",120000,["typescript","react"],3],["b",73,1,"Middle","frontend",120000,["typescript","react"],2],["other",99,0,"Junior","frontend",120000,["typescript","react"],0]]},
+    {"id":"qa-junior","split":"holdout","spec":"qa","grade":"Junior","skills":["testing","sql"],"profiles":[["a",90,0,"Junior","qa",90000,["testing","sql"],3],["expensive",82,0,"Junior","qa",200000,["testing","sql"],0],["claims",null,0,null,"qa",90000,["testing","sql"],0],["partial",72,0,"Junior","qa",90000,["python"],1]]}
+  ]
+}

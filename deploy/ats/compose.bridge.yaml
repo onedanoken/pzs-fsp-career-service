@@ -1,0 +1,16 @@
+# Optional operator-configured adapter. Normal application deployment does not start it.
+services:
+  ats-bridge:
+    image: fsp-lct2026-fsp-career
+    profiles: [ats]
+    command: [python, scripts/ats_bridge.py, --config, /run/fsp-ats/config.json, --interval, "60"]
+    env_file: [./deploy/runtime/ats-bridge.env]
+    volumes:
+      - ./deploy/runtime/ats-bridge.json:/run/fsp-ats/config.json:ro
+    read_only: true
+    tmpfs: [/tmp:size=64m,mode=1777]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 512m
+    cpus: .5
+    restart: unless-stopped

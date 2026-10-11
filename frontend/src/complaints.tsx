@@ -1,0 +1,38 @@
+import {FormEvent,useState} from 'react';
+import {api,RecordData} from './api';
+import {Badge,Empty,ErrorBox,Loading,Modal,useLoad} from './ui';
+
+const kinds:Record<string,string>={payment_request:'Требуют оплату или денежный перевод',misleading_terms:'Условия не соответствуют обещанным',fraud:'Признаки мошенничества',abuse:'Оскорбления или давление',other:'Другая проблема',appeal:'Пересмотр ограничения'};
+const states:Record<string,string>={open:'На рассмотрении',confirmed:'Нарушение подтверждено',dismissed:'Нарушение не подтверждено'};
+type Target={org_id:string;company:string;need_id?:string;context?:string};
+const date=(value:string)=>new Date(value).toLocaleString('ru-RU');
+
+function ComplaintDetails({item}:{item:RecordData}){
+ return <><div className="complaint-heading"><h3>{item.company}</h3><Badge type={item.state==='confirmed'?'amber':item.state==='open'?'purple':'neutral'}>{states[item.state]||item.state}</Badge></div>{item.need_title&&<p className="muted">Приглашение: {item.need_title}</p>}<p><strong>{kinds[item.kind]||'Другая проблема'}</strong></p><p className="preserve-lines complaint-message">{item.message}</p><p className="muted small">Отправлена {date(item.created_at)}</p>{item.resolution&&<div className="note complaint-resolution"><div><strong>Решение модератора</strong><p className="preserve-lines">{item.resolution}</p><small>{date(item.resolved_at)}</small></div></div>}</>;
+}
+
+function ComplaintForm({target,onClose,onSent,onNavigate}:{target?:Target;onClose:()=>void;onSent:()=>void;onNavigate?:(page:string)=>void}){
+ const targets=useLoad('/complaint-targets');
+ const [org,setOrg]=useState(target?.org_id||''),[kind,setKind]=useState('payment_request'),[message,setMessage]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false),[sent,setSent]=useState(false);
+ const company=target?.company||targets.data?.items.find((x:Target)=>x.org_id===org)?.company;
+ const prefix=target?.context&&!target.need_id?target.context+'\n\n':'';
+ const close=()=>{if(!busy)onClose();};
+ const submit=async(e:FormEvent)=>{e.preventDefault();if(busy)return;setError('');setBusy(true);try{await api('/complaints',{org_id:org,need_id:target?.need_id||null,kind,message:prefix+message.trim()});setSent(true);onSent();}catch(e:any){setError(e.message);}finally{setBusy(false);}};
+ return <Modal title={sent?'Жалоба отправлена':'Сообщить о проблеме'} onClose={close}>{sent?<div className="complaint-confirmation" role="status"><p>Жалоба на компанию <strong>{company}</strong> принята на рассмотрение.</p><p>Модератор проверит обстоятельства. Статус и обоснование решения появятся в разделе «Мои жалобы».</p><p className="muted">Отправка жалобы сама по себе не блокирует компанию.</p><div className="actions">{onNavigate&&<button className="btn primary" onClick={()=>{onClose();onNavigate('complaints');}}>Мои жалобы</button>}<button className="btn secondary" onClick={onClose}>Закрыть</button></div></div>:<form className="form" onSubmit={submit}><ErrorBox error={error||targets.error}/>{target?<p>Компания: <strong>{target.company}</strong>{target.context&&<span className="complaint-context">{target.context}</span>}</p>:<label>Компания<select aria-label="Компания" required value={org} onChange={e=>setOrg(e.target.value)} disabled={busy||targets.loading}><option value="">Выберите компанию</option>{targets.data?.items.map((x:Target)=><option key={x.org_id} value={x.org_id}>{x.company}</option>)}</select></label>}{targets.loading&&<Loading/>}{!target&&!targets.loading&&!targets.error&&!targets.data?.items.length&&<p>Компания появится здесь после просмотра вакансий или получения приглашения.</p>}<label>Что произошло<select aria-label="Что произошло" value={kind} onChange={e=>setKind(e.target.value)} disabled={busy}>{Object.entries(kinds).filter(([key])=>key!=='appeal').map(([key,label])=><option value={key} key={key}>{label}</option>)}</select></label><label>Опишите ситуацию<textarea aria-label="Опишите ситуацию" required minLength={10} maxLength={Math.max(10,2000-prefix.length)} rows={5} value={message} onChange={e=>setMessage(e.target.value)} disabled={busy} placeholder="Что произошло и какие условия были предложены?"/></label><p className="muted small">Не добавляйте пароли и данные документов. Обращение увидит модератор; оно не публикуется работодателям.</p><div className="actions"><button className="btn primary" disabled={busy||!org||message.trim().length<10||targets.loading||!!targets.error}>{busy?'Отправляем…':'Отправить жалобу'}</button><button type="button" className="btn secondary" disabled={busy} onClick={close}>Отмена</button></div></form>}</Modal>;
+}
+
+export function ComplaintButton({target,onNavigate}:{target:Target;onNavigate?:(page:string)=>void}){
+ const [open,setOpen]=useState(false);
+ return <><button className="text-btn complaint-link" onClick={()=>setOpen(true)}>Пожаловаться</button>{open&&<ComplaintForm target={target} onClose={()=>setOpen(false)} onSent={()=>{}} onNavigate={onNavigate}/>}</>;
+}
+
+export function Complaints(){
+ const [revision,setRevision]=useState(0),[create,setCreate]=useState(false);const load=useLoad('/complaints',revision);
+ return <><div className="complaint-page-header"><div><h1>Мои жалобы</h1><p className="muted">Ваши обращения и решения модератора.</p></div><div className="actions"><button className="btn primary" onClick={()=>setCreate(true)}>Новая жалоба</button><button className="btn secondary" disabled={load.loading} onClick={()=>setRevision(r=>r+1)}>Обновить статусы</button></div></div><ErrorBox error={load.error}/>{load.loading?<Loading/>:load.error?null:!load.data?.items.length?<section className="panel"><Empty title="Жалоб пока нет" text="Если компания требует оплату, меняет условия или оказывает давление, сообщите об этом здесь."/></section>:load.data.items.map((item:RecordData)=><article className="panel complaint-card" key={item.id}><ComplaintDetails item={item}/></article>)}{create&&<ComplaintForm onClose={()=>setCreate(false)} onSent={()=>setRevision(r=>r+1)}/>}</>;
+}
+
+export function ComplaintQueue({items,onChanged}:{items:RecordData[];onChanged:()=>void}){
+ const [selected,setSelected]=useState<RecordData|null>(null),[reason,setReason]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false);
+ const decide=async(state:string)=>{if(!selected||busy)return;setBusy(true);setError('');try{await api('/admin/complaints/'+selected.id+'/resolve',{state,resolution:reason.trim()});setSelected(null);onChanged();}catch(e:any){setError(e.message);if(e.status===409)onChanged();}finally{setBusy(false);}};
+ return <section className="panel"><h2>Жалобы</h2>{!items.length&&<p className="muted">Обращений пока нет.</p>}{items.map(item=><article className="complaint-card" key={item.id}><ComplaintDetails item={item}/>{item.state==='open'&&<div className="actions"><button className="btn secondary" onClick={()=>{setSelected(item);setReason('');setError('');}}>Рассмотреть жалобу</button></div>}</article>)}{selected&&<Modal title="Решение по жалобе" onClose={()=>{if(!busy)setSelected(null);}}><ComplaintDetails item={selected}/><ErrorBox error={error}/><label>Обоснование решения<textarea aria-label="Обоснование решения" minLength={10} maxLength={2000} rows={4} value={reason} onChange={e=>setReason(e.target.value)} disabled={busy}/></label><p className="muted small">Автор жалобы увидит это обоснование. Решение сохраняется в истории.</p><div className="actions"><button className="btn primary" disabled={busy||reason.trim().length<10} onClick={()=>decide('confirmed')}>Подтвердить нарушение</button><button className="btn secondary" disabled={busy||reason.trim().length<10} onClick={()=>decide('dismissed')}>Отклонить жалобу</button></div></Modal>}</section>;
+}

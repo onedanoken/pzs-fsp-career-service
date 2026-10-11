@@ -1,0 +1,17 @@
+{
+  "scope": "Isolated Windows application process + local PostgreSQL16, controlled synthetic profiles; not public production workload",
+  "profiles": 1200,
+  "concurrency": 4,
+  "requested_seconds": 60,
+  "actual_seconds": 60.4,
+  "requests": 1149,
+  "requests_per_second": 19.02,
+  "p50_ms": 170.17,
+  "p95_ms": 517.77,
+  "max_ms": 1063.01,
+  "application_peak_rss_mib": 90.44,
+  "application_cpu_seconds": 61.55,
+  "errors": [],
+  "ml": "disabled; no neural latency claims",
+  "limits": "Bounded result pages with batched ranking inputs; timings describe this machine/catalogue/mix, not all hardware or a market-scale SLA."
+}

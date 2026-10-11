@@ -1,0 +1,30 @@
+services:
+  database:
+    mem_limit: 512m
+  fsp-career:
+    mem_limit: 1024m
+    environment:
+      FSP_SECURE_COOKIE: "1"
+      FSP_ALLOW_REGISTRATION: ${FSP_ALLOW_REGISTRATION:-0}
+      FSP_PUBLIC_URL: "${FSP_PUBLIC_URL:-https://${FSP_PUBLIC_IP:?Set IP}}"
+      FSP_ALLOWED_ORIGINS: "${FSP_ALLOWED_ORIGINS:-https://${FSP_PUBLIC_IP:?Set IP}}"
+    command: ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers", "--forwarded-allow-ips", "*"]
+  proxy:
+    image: nginx:1.28.3-alpine
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./deploy/runtime/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./deploy/runtime/acme:/var/www/acme:ro
+      - ./deploy/runtime/letsencrypt:/etc/letsencrypt:ro
+    depends_on: [fsp-career]
+    restart: unless-stopped
+    mem_limit: 64m
+    security_opt: ["no-new-privileges:true"]
+  certbot:
+    image: certbot/certbot:v5.8.0
+    profiles: [operations]
+    volumes:
+      - ./deploy/runtime/acme:/var/www/acme
+      - ./deploy/runtime/letsencrypt:/etc/letsencrypt
+      - ./deploy/runtime/certbot-lib:/var/lib/letsencrypt
+      - ./deploy/runtime/certbot-log:/var/log/letsencrypt

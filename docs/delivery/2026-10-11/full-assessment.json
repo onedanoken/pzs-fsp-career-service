@@ -1,0 +1,3637 @@
+{
+  "seed": 20261011,
+  "baseline": "9b05443",
+  "scope": "Actual result_for and original/transfer oracles; assumed screening answers and artifact-success probabilities; no people tested",
+  "model": {
+    "weak": [
+      0.3,
+      0.15
+    ],
+    "borderline": [
+      0.7,
+      0.65
+    ],
+    "strong": [
+      0.95,
+      0.97
+    ],
+    "one_weak_core": [
+      0.95,
+      0.97
+    ],
+    "leaked_screening": [
+      1,
+      0.15
+    ]
+  },
+  "content": [
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "sql": 3,
+        "api_contracts": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 7,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "data_processing": 3,
+        "state": 3,
+        "accessibility": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "test_design": 3,
+        "api_contracts": 3,
+        "debugging": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 7,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 6,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "capacity": 3,
+        "deployment": 3,
+        "pipeline": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 6,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 6,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 8,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 8,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 8,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 8,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "metrics": 3,
+        "splitting": 3,
+        "leakage": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 6,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261011,
+      "families": 4,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "policy": "baseline",
+      "seed": 20261012,
+      "families": 5,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261011,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "policy": "current",
+      "seed": 20261012,
+      "families": 9,
+      "quotas": {
+        "authorization": 3,
+        "network": 3,
+        "least_privilege": 3
+      }
+    }
+  ],
+  "rows": [
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.295,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.295,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.945,
+      "disagreement": 0.12,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.945,
+      "disagreement": 0.12,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.11,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.11,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.255,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.255,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.895,
+      "disagreement": 0.175,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.895,
+      "disagreement": 0.175,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.065,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.065,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.125,
+      "disagreement": 0.245,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.125,
+      "disagreement": 0.245,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.945,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.945,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.33,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.33,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.925,
+      "disagreement": 0.145,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.925,
+      "disagreement": 0.145,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.105,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.105,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "backend",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.315,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.315,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.955,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.955,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.18,
+      "disagreement": 0.305,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.18,
+      "disagreement": 0.305,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.13,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.13,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.11,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.11,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.125,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.125,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.94,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.94,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.28,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.28,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.89,
+      "disagreement": 0.175,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.89,
+      "disagreement": 0.175,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "frontend",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.31,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.31,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.125,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.125,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.085,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.085,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.07,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.07,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.17,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.17,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.12,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.12,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.315,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.315,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.16,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.16,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.265,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.265,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.18,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.18,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.125,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.05,
+      "disagreement": 0.125,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "qa",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.225,
+      "disagreement": 0.36,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.225,
+      "disagreement": 0.36,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.915,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.05,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.05,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.155,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.885,
+      "disagreement": 0.195,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.885,
+      "disagreement": 0.195,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.085,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.085,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.07,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.04,
+      "disagreement": 0.07,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.13,
+      "disagreement": 0.255,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.13,
+      "disagreement": 0.255,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.9,
+      "disagreement": 0.16,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.9,
+      "disagreement": 0.16,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.065,
+      "disagreement": 0.115,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.065,
+      "disagreement": 0.115,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.185,
+      "disagreement": 0.285,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.185,
+      "disagreement": 0.285,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.88,
+      "disagreement": 0.17,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.88,
+      "disagreement": 0.17,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "devops",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.04,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.16,
+      "disagreement": 0.28,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.16,
+      "disagreement": 0.28,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.93,
+      "disagreement": 0.11,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.93,
+      "disagreement": 0.11,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.08,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.025,
+      "disagreement": 0.045,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.005,
+      "disagreement": 0.005,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.005,
+      "disagreement": 0.005,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.15,
+      "disagreement": 0.285,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.15,
+      "disagreement": 0.285,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.115,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.065,
+      "disagreement": 0.115,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.065,
+      "disagreement": 0.115,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.02,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.02,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.275,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.12,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.935,
+      "disagreement": 0.12,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.075,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.075,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.01,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.19,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.185,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.905,
+      "disagreement": 0.185,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.095,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "ml",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.015,
+      "disagreement": 0.025,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.18,
+      "disagreement": 0.295,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.18,
+      "disagreement": 0.295,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.955,
+      "disagreement": 0.13,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.955,
+      "disagreement": 0.13,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.08,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.08,
+      "disagreement": 0.13,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.05,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Intern",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.03,
+      "disagreement": 0.05,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.31,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.165,
+      "disagreement": 0.31,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.925,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.925,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.125,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.055,
+      "disagreement": 0.125,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.06,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Junior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.045,
+      "disagreement": 0.06,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.135,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.135,
+      "disagreement": 0.26,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.9,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.9,
+      "disagreement": 0.165,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.06,
+      "disagreement": 0.12,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.06,
+      "disagreement": 0.12,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Middle",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.02,
+      "disagreement": 0.035,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "weak",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.0,
+      "disagreement": 0.0,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.185,
+      "disagreement": 0.25,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "borderline",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.185,
+      "disagreement": 0.25,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.895,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "strong",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.895,
+      "disagreement": 0.14,
+      "reference_expected_pass": true
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.1,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "one_weak_core",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.1,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "baseline",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    },
+    {
+      "spec": "security",
+      "grade": "Senior",
+      "profile": "leaked_screening",
+      "policy": "current",
+      "n": 200,
+      "pass_rate": 0.035,
+      "disagreement": 0.075,
+      "reference_expected_pass": false
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "weak": {
+        "pass_rate": 0.0002,
+        "disagreement": 0.0002
+      },
+      "borderline": {
+        "pass_rate": 0.1648,
+        "disagreement": 0.285
+      },
+      "strong": {
+        "pass_rate": 0.9179,
+        "disagreement": 0.1475
+      },
+      "one_weak_core": {
+        "pass_rate": 0.0504,
+        "disagreement": 0.1006
+      },
+      "leaked_screening": {
+        "pass_rate": 0.024,
+        "disagreement": 0.0454
+      },
+      "mean_distinct_families": 6.375
+    },
+    "current": {
+      "weak": {
+        "pass_rate": 0.0002,
+        "disagreement": 0.0002
+      },
+      "borderline": {
+        "pass_rate": 0.1648,
+        "disagreement": 0.285
+      },
+      "strong": {
+        "pass_rate": 0.9179,
+        "disagreement": 0.1475
+      },
+      "one_weak_core": {
+        "pass_rate": 0.0504,
+        "disagreement": 0.1006
+      },
+      "leaked_screening": {
+        "pass_rate": 0.024,
+        "disagreement": 0.0454
+      },
+      "mean_distinct_families": 9.0
+    }
+  },
+  "limits": [
+    "Synthetic profiles are assumptions; metrics do not estimate human qualification accuracy.",
+    "Screening content changed; identical simulated correctness draws compare decision gates, not empirical difficulty equivalence.",
+    "Strong false refusals and borderline instability must be reported, not hidden.",
+    "A leaked finite screening bank can be learned; practical gates reduce risk under the stated work-success model only."
+  ]
+}

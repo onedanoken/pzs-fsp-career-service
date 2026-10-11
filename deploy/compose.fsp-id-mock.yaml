@@ -1,0 +1,25 @@
+# Isolated local operator profile. Never enable on the public application VM.
+services:
+  fsp-id-mock:
+    build: .
+    command: ["python", "-m", "uvicorn", "scripts.mock_fsp_id:create_app", "--factory", "--host", "0.0.0.0", "--port", "17771"]
+    ports: ["127.0.0.1:17771:17771"]
+    environment:
+      FSP_MOCK_ACCOUNT_PASSWORD: ${FSP_MOCK_ACCOUNT_PASSWORD:?Set an isolated test account password}
+      FSP_MOCK_ISSUER: http://127.0.0.1:17771/realms/fsp
+      FSP_MOCK_REDIRECT_URI: http://localhost:8000/api/fsp/oidc/callback
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:17771/realms/fsp/.well-known/openid-configuration')"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  fsp-career:
+    environment:
+      FSP_OIDC_ISSUER: http://127.0.0.1:17771/realms/fsp
+      FSP_OIDC_CLIENT_ID: fsp-career-mock
+      FSP_OIDC_CLIENT_SECRET: ""
+      FSP_OIDC_DEMO_ISSUER: "1"
+      FSP_OIDC_BACKCHANNEL_BASE: http://fsp-id-mock:17771
+      FSP_PUBLIC_URL: http://localhost:8000
+    depends_on:
+      fsp-id-mock:
+        condition: service_healthy

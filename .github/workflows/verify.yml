@@ -1,0 +1,40 @@
+name: Verify source delivery
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16.15-bookworm
+        env:
+          POSTGRES_USER: fsp
+          POSTGRES_PASSWORD: ci-disposable-only
+          POSTGRES_DB: fsp
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U fsp" --health-interval 5s
+          --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: pip install -r requirements-dev.txt
+      - run: npm ci && npm run build
+        working-directory: frontend
+      - run: python -m pytest tests -q
+        env:
+          FSP_TEST_POSTGRES_DSN: postgresql://fsp:ci-disposable-only@localhost:5432/fsp
+      - run: docker compose config --quiet && docker build --tag fsp-ci-app .
+        env:
+          FSP_POSTGRES_PASSWORD: ci-disposable-only
+      - name: Immutable catalogue survives an empty persistent volume
+        run: >-
+          docker run --rm --network none --tmpfs /app/data:rw,mode=1777 fsp-ci-app
+          python -c "from pathlib import Path; from backend.main import app; from backend.content_registry import registry; from backend.assessment_forms import CORE,screening; assert registry()['schema']=='fsp-assessment-content-v2'; assert app.openapi()['info']['version']=='0.16.0'; assert all(len(screening(s,g,7)[0])==9 for s in CORE for g in ['Intern','Junior','Middle','Senior']); assert all((Path('docs/delivery/2026-10-11') / name).is_file() for name in ['FSP_CAREER_GUIDE.pdf','FSP_CAREER_GUIDE.docx','FSP_CAREER_PRESENTATION.pdf','FSP_CAREER_PRESENTATION.pptx']); print('Immutable catalogue, all 24 forms and four delivered documents survive empty data volume')"

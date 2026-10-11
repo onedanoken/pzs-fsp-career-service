@@ -1,0 +1,67 @@
+services:
+  database:
+    image: postgres:16.15-bookworm
+    environment:
+      POSTGRES_DB: fsp
+      POSTGRES_USER: fsp
+      POSTGRES_PASSWORD: ${FSP_POSTGRES_PASSWORD:?Set FSP_POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fsp -d fsp"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+    restart: unless-stopped
+  fsp-career:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      FSP_DATABASE_URL: "host=database dbname=fsp user=fsp password=${FSP_POSTGRES_PASSWORD}"
+      FSP_DEMO: ${FSP_DEMO:-0}
+      FSP_TEST_LOGIN: "0"
+      FSP_LEGACY_EMAIL_AUTH: "0"
+      FSP_EMAIL_REQUIRED: "1"
+      FSP_ALLOW_REGISTRATION: ${FSP_ALLOW_REGISTRATION:-1}
+      FSP_ASSESSMENT_PATH: ${FSP_ASSESSMENT_PATH:-work_sample_v3_balanced}
+      FSP_MATCH_POLICY: ${FSP_MATCH_POLICY:-category-evidence-v2}
+      FSP_ENABLE_ML: "0"
+      FSP_SECURE_COOKIE: ${FSP_SECURE_COOKIE:-0}
+      FSP_PUBLIC_URL: ${FSP_PUBLIC_URL:-http://localhost:8000}
+      FSP_ALLOWED_ORIGINS: ${FSP_ALLOWED_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      FSP_OLLAMA_URL: ${FSP_OLLAMA_URL:-}
+      FSP_GENERATOR_MODEL: ${FSP_GENERATOR_MODEL:-qwen2.5:0.5b}
+      FSP_GENERATOR_PROTOCOL: ${FSP_GENERATOR_PROTOCOL:-ollama}
+      FSP_GENERATOR_TOKEN: ${FSP_GENERATOR_TOKEN:-}
+      FSP_GENERATOR_TIMEOUT: ${FSP_GENERATOR_TIMEOUT:-30}
+      FSP_GENERATOR_REVISION: ${FSP_GENERATOR_REVISION:-}
+      FSP_GENERATOR_QUANTIZATION: ${FSP_GENERATOR_QUANTIZATION:-}
+      FSP_SMTP_HOST: ${FSP_SMTP_HOST:-}
+      FSP_DELIVERY_API_URL: ${FSP_DELIVERY_API_URL:-}
+      FSP_DELIVERY_API_KEY: ${FSP_DELIVERY_API_KEY:-}
+      FSP_REGISTRY_ISSUER: ${FSP_REGISTRY_ISSUER:-}
+      FSP_REGISTRY_API_KEY: ${FSP_REGISTRY_API_KEY:-}
+      FSP_SMTP_STARTTLS: ${FSP_SMTP_STARTTLS:-1}
+      FSP_SMTP_SSL: ${FSP_SMTP_SSL:-0}
+      FSP_SMTP_PORT: ${FSP_SMTP_PORT:-587}
+      FSP_SMTP_FROM: ${FSP_SMTP_FROM:-}
+      FSP_SMTP_USER: ${FSP_SMTP_USER:-}
+      FSP_SMTP_PASSWORD: ${FSP_SMTP_PASSWORD:-}
+      FSP_OIDC_ISSUER: ${FSP_OIDC_ISSUER:-}
+      FSP_OIDC_CLIENT_ID: ${FSP_OIDC_CLIENT_ID:-}
+      FSP_OIDC_CLIENT_SECRET: ${FSP_OIDC_CLIENT_SECRET:-}
+      FSP_OIDC_BACKCHANNEL_BASE: ${FSP_OIDC_BACKCHANNEL_BASE:-}
+      FSP_OIDC_DEMO_ISSUER: ${FSP_OIDC_DEMO_ISSUER:-0}
+    depends_on:
+      database:
+        condition: service_healthy
+    volumes:
+      - app-data:/app/data
+    restart: unless-stopped
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    pids_limit: 128
+volumes:
+  postgres-data:
+  app-data:

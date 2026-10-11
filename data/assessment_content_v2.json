@@ -1,0 +1,160 @@
+{
+  "schema": "fsp-assessment-content-v2",
+  "grade_matrix": {
+    "Intern": {
+      "constraints": 1,
+      "expectation": "Один явно заданный инвариант и базовое применение"
+    },
+    "Junior": {
+      "constraints": 2,
+      "expectation": "Типовая ошибка, границы и отрицательный сценарий"
+    },
+    "Middle": {
+      "constraints": 3,
+      "expectation": "Связанные ограничения, конкуренция/сбой и воспроизводимый результат"
+    },
+    "Senior": {
+      "constraints": 4,
+      "expectation": "Несколько ограничений, цена отказа и изменение условий; ограниченная модель, не универсальное подтверждение профессии"
+    }
+  },
+  "calibration": "pilot_unvalidated",
+  "reference_method": "team_owned_model_oracles",
+  "sources": [
+    {
+      "id": "h5bp-interviews",
+      "url": "https://github.com/h5bp/Front-end-Developer-Interview-Questions",
+      "version": "33f5498b653e7ae061ee5a65a0b44e9ab860502c",
+      "license": "MIT",
+      "summary": "Темы браузерного поведения, сети, производительности и тестирования.",
+      "sha256": "0b34feb80e1fa54d6659837eea56a75f0bd4a428847dac027472a402580a916e",
+      "upstream_revision": "33f5498b653e7ae061ee5a65a0b44e9ab860502c",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "frontend",
+        "qa"
+      ],
+      "license_url": "https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/33f5498b653e7ae061ee5a65a0b44e9ab860502c/LICENSE.md",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "react-interviews",
+      "url": "https://github.com/sudheerj/reactjs-interview-questions",
+      "version": "55b7d491cd74c7b37f9352f3b2420d66e7187951",
+      "license": "MIT",
+      "summary": "Состояние, эффекты, Hooks и тестирование компонентов.",
+      "sha256": "9d370a4a49a44b4adc498a2da45899cc75ca14f9e6799334b65afc8941d6168b",
+      "upstream_revision": "55b7d491cd74c7b37f9352f3b2420d66e7187951",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "frontend"
+      ],
+      "license_url": "https://github.com/sudheerj/reactjs-interview-questions/blob/55b7d491cd74c7b37f9352f3b2420d66e7187951/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "sysadmin-interviews",
+      "url": "https://github.com/trimstray/test-your-sysadmin-skills",
+      "version": "d566322e4f6a656fb835bf34712a67db269d5f2d",
+      "license": "MIT",
+      "summary": "Linux, сеть и диагностика; неполные ответы не становятся эталоном.",
+      "sha256": "b20ef1b0df1211a65eb492beb53b755ab3123e04624eee01662123a9bd360e63",
+      "upstream_revision": "d566322e4f6a656fb835bf34712a67db269d5f2d",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "devops"
+      ],
+      "license_url": "https://github.com/trimstray/test-your-sysadmin-skills/blob/d566322e4f6a656fb835bf34712a67db269d5f2d/LICENSE.md",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "data-science-interviews",
+      "url": "https://github.com/alexeygrigorev/data-science-interviews",
+      "version": "919f44547ef5ffc2bd59674fd301940529f4c1a8",
+      "license": "CC-BY-4.0",
+      "summary": "Метрики, валидация и доступность данных.",
+      "sha256": "107c59a8bb7092c96483d8284ea066ffb13c6e66b94a7a0556065c6475d821ea",
+      "upstream_revision": "919f44547ef5ffc2bd59674fd301940529f4c1a8",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "ml"
+      ],
+      "license_url": "https://github.com/alexeygrigorev/data-science-interviews/blob/919f44547ef5ffc2bd59674fd301940529f4c1a8/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "owasp-wstg",
+      "url": "https://github.com/OWASP/wstg",
+      "version": "41825236dfaebda3f605f47963c5640bafd1355d",
+      "license": "CC-BY-SA-4.0",
+      "summary": "Практические проверки изоляции, authentication и authorization.",
+      "sha256": "ef46d32b9a5637f65439c8170477b70dbb094608fd2fc369e82ecce9685ad71c",
+      "upstream_revision": "41825236dfaebda3f605f47963c5640bafd1355d",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "security"
+      ],
+      "license_url": "https://github.com/OWASP/wstg/blob/41825236dfaebda3f605f47963c5640bafd1355d/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "python-interview-yakimka",
+      "url": "https://github.com/yakimka/python_interview_questions",
+      "version": "d4e0aed6ee8a20e92375d53f11aeac0ace78d2e9",
+      "license": "MIT",
+      "summary": "Структуры данных, генераторы и язык; эталоны проверяет команда.",
+      "sha256": "2e0e8011d6c212b01ed7bcb9f392e11f1dbb6d2b105745baba758d0c0019c992",
+      "upstream_revision": "d4e0aed6ee8a20e92375d53f11aeac0ace78d2e9",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "backend"
+      ],
+      "license_url": "https://github.com/yakimka/python_interview_questions/blob/d4e0aed6ee8a20e92375d53f11aeac0ace78d2e9/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "dnx-devops-interviews",
+      "url": "https://github.com/DNXLabs/DevOps-Interview-Questions",
+      "version": "4d4b3ae44a0abd87cf5b5f79b9fce7abd6ce7e9a",
+      "license": "MIT",
+      "summary": "CI, инфраструктура, автоматизация и отказоустойчивость.",
+      "sha256": "111a2fbdd67a52b79dcb51f086b2b2f55ef0c6abf403ee686b7ceaa3517f9ba2",
+      "upstream_revision": "4d4b3ae44a0abd87cf5b5f79b9fce7abd6ce7e9a",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "devops"
+      ],
+      "license_url": "https://github.com/DNXLabs/DevOps-Interview-Questions/blob/4d4b3ae44a0abd87cf5b5f79b9fce7abd6ce7e9a/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "qa-interview-bank",
+      "url": "https://github.com/TheAndreyZakharov/IT-Interview-Question-Bank",
+      "version": "d9752d79df31e3b2e63ae60d5c44d9d211a684ef",
+      "license": "MIT",
+      "summary": "Тест-дизайн, контракт API, UI, нагрузка и уточнение условий.",
+      "sha256": "986523d75c2ac3ae4bba62b46fcf4e30a346a8bb26db06183097a999c70bc0ad",
+      "upstream_revision": "d9752d79df31e3b2e63ae60d5c44d9d211a684ef",
+      "fetched_at": "2026-10-07",
+      "roles": [
+        "qa"
+      ],
+      "license_url": "https://github.com/TheAndreyZakharov/IT-Interview-Question-Bank/blob/d9752d79df31e3b2e63ae60d5c44d9d211a684ef/LICENSE",
+      "use": "Public metadata and technical-topic taxonomy. Work prompts, conditions and model oracles are owned; no upstream answers are copied as ground truth."
+    },
+    {
+      "id": "istqb-reference",
+      "url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+      "version": "Syllabus4.0.1; samplesA/B1.7,C1.6,D1.5 observed2026-10-07",
+      "license": "Reference only; documents retain their own terms",
+      "summary": "Структура компетенций и учебные цели; тексты экзамена не импортируются.",
+      "roles": [
+        "qa"
+      ],
+      "use": "Metadata/reference only; no text corpus import.",
+      "sha256": "3f6f1f02d592ed72ace5c698f88d58582dc417dce5a3d31118de777b94ed8ced",
+      "fetched_at": "2026-10-07",
+      "upstream_revision": "observed-html-sha256:3f6f1f02d592ed72ace5c698f88d58582dc417dce5a3d31118de777b94ed8ced"
+    }
+  ]
+}

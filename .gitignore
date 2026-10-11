@@ -1,0 +1,69 @@
+# Local environments, caches and attachments.
+.venv*/
+__pycache__/
+.pytest_cache/
+.coverage*
+htmlcov/
+*.pyc
+*.log
+tmp/
+.codex-remote-attachments/
+.local/
+/AGENTS.md
+
+# Credentials and private operational state; publish the example only.
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+.terraform/
+*.tfstate*
+*.tfplan
+*.tfvars
+*.tfvars.json
+deploy/runtime/
+
+# Runtime data and downloaded models are recreated by the setup/import scripts.
+data/*
+!data/model_lock.json
+!data/knowledge_manifest.json
+!data/generation_model_lock.json
+!data/generation_gguf_lock.json
+!data/assessment_content_v2.json
+
+# Frontend dependencies and generated assets.
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/public/api-ui/swagger-ui*
+frontend/public/api-ui/LICENSE
+
+# Generated reports stay local; selected public evidence lives in docs/evidence.
+artifacts/*
+!artifacts/README.md
+
+# Private release data and unrelated mobile binaries.
+/backups/
+/release/
+*.sql.gz
+*.dump
+*.apk
+*.aab
+
+# Private presentation build diagnostics.
+/.chart-data-*/
+/.codex-finalizer/
+
+!data/screening_core_operations.json
+
+# Private immutable working plan retained locally, excluded from submission.
+/docs/FSP_IMPLEMENTATION_PLAN.md

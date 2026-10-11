@@ -1,0 +1,28 @@
+{
+  "provider": "odoo19",
+  "platform_url": "https://pzs-fsp-career.duckdns.org",
+  "platform_token_env": "FSP_ATS_TOKEN",
+  "provider_url": "https://ats.example.org",
+  "provider_token_env": "ODOO_API_KEY",
+  "database": "recruitment",
+  "company_id": 1,
+  "job_rules": {
+    "123": {
+      "team": "Replace with the actual employer team",
+      "specialization": "backend",
+      "grade": "Middle",
+      "skills": [
+        "python",
+        "sql"
+      ],
+      "salary_min": 120000,
+      "salary_max": 180000,
+      "salary_type": "net",
+      "work_mode": "remote",
+      "employer_contact": "Replace with an approved employer contact",
+      "valid_days": 30
+    }
+  },
+  "state_id": "odoo-recruitment-company-1",
+  "state_database_env": "FSP_ATS_STATE_DATABASE_URL"
+}
